@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduEdge | Welcome</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg,#00c6ff,#4b00e0,#ff4d6d,#ffe156);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  padding: 20px;
+}
+@keyframes gradientBG {0%{background-position:0% 50%;}50%{background-position:100% 50%;}100%{background-position:0% 50%;}}
+
+/* Particles Layer */
+#particles-js {position:absolute;width:100%;height:100%;z-index:0;}
+
+/* Floating shapes */
+.bg-shape {position:absolute;border-radius:50%;opacity:0.25;filter:blur(40px);animation: float 8s infinite ease-in-out alternate;z-index:1;}
+.shape1 {width:300px;height:300px;top:-100px;left:-80px;background:#00c6ff;}
+.shape2 {width:220px;height:220px;bottom:-60px;right:-50px;background:#ffe156;}
+.shape3 {width:180px;height:180px;top:20%;right:12%;background:#ff4d6d;}
+@keyframes float {0%{transform: translateY(0) translateX(0);}100%{transform: translateY(-50px) translateX(40px);}}
+
+/* Content */
+.content {
+  z-index:3;
+  max-width:700px;
+  width:90%;
+  padding:20px;
+  animation:fadeIn 2s ease-in-out;
+  text-align:center;
+}
+@keyframes fadeIn {from{opacity:0;transform:translateY(50px);}to{opacity:1;transform:translateY(0);}}
+
+/* Logo */
+.logo {animation:pulse 3s infinite alternate ease-in-out;margin-bottom:15px;}
+.logo img {width:150px;max-width:35vw;height:auto;filter:drop-shadow(0 0 20px rgba(255,255,255,0.7));}
+@keyframes pulse {0%{transform:scale(1);}100%{transform:scale(1.08);}}
+
+/* EduEdge one line with colors */
+.edu-edge {
+  font-size:60px;
+  font-weight:bolder;
+  letter-spacing:2px;
+  display:inline-flex;
+  justify-content:center;
+  white-space: nowrap;
+  flex-wrap:nowrap;
+  animation: slideIn 1.5s ease forwards;
+}
+.edu-edge .edu {color:#fff;}
+.edu-edge .edge {color:#00e0ff;}
+@keyframes slideIn {from{opacity:0;transform:translateY(-20px);}to{opacity:1;transform:translateY(0);}}
+
+/* Tagline & Welcome */
+.tagline {margin-top:10px;font-size:20px;font-weight:500;color:#ffe156;opacity:0;animation:fadeUp 2s ease forwards;animation-delay:1s;}
+.welcome {font-size:32px;margin-top:25px;font-weight:700;color:#fff;text-shadow:0 0 10px #00e0ff,0 0 20px #00ff95,0 0 30px #4b00e0;opacity:0;animation:glow 3s ease-in-out forwards;animation-delay:2s;}
+@keyframes fadeUp {from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+@keyframes glow {from{opacity:0;transform:scale(0.8);}to{opacity:1;transform:scale(1);}}
+
+/* Button */
+.enter-btn {
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 40px;
+  font-size:18px;
+  font-weight:600;
+  color:#fff;
+  border:2px solid #fff;
+  border-radius:50px;
+  background:transparent;
+  cursor:pointer;
+  transition:all 0.4s;
+  opacity:0;
+  animation:fadeUp 2s ease forwards;
+  animation-delay:3s;
+  text-decoration:none;
+  text-align:center;
+}
+.enter-btn:hover {
+  background:#00e0ff;
+  color:#000;
+  box-shadow:0 0 20px #00e0ff,0 0 40px #00ff95;
+  transform:translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width:1024px){
+  .bg-shape.shape1{width:220px;height:220px;top:-80px;left:-50px;}
+  .bg-shape.shape2{width:160px;height:160px;bottom:-40px;right:-30px;}
+  .bg-shape.shape3{width:130px;height:130px;top:18%;right:8%;}
+  .edu-edge{font-size:50px;}
+  .tagline{font-size:18px;}
+  .welcome{font-size:28px;}
+}
+@media (max-width:768px){
+  .bg-shape.shape1{width:180px;height:180px;top:-60px;left:-40px;}
+  .bg-shape.shape2{width:120px;height:120px;bottom:-30px;right:-20px;}
+  .bg-shape.shape3{width:100px;height:100px;top:15%;right:5%;}
+  .edu-edge{font-size:42px;}
+  .tagline{font-size:16px;}
+  .welcome{font-size:24px;}
+  .logo img{max-width:30vw;}
+  .enter-btn{padding:12px 32px;font-size:16px;}
+}
+@media (max-width:480px){
+  .bg-shape.shape1{width:120px;height:120px;top:-40px;left:-30px;}
+  .bg-shape.shape2{width:90px;height:90px;bottom:-20px;right:-15px;}
+  .bg-shape.shape3{width:80px;height:80px;top:12%;right:3%;}
+  .edu-edge{font-size:32px;}
+  .tagline{font-size:14px;}
+  .welcome{font-size:20px;}
+  .logo img{width:80px;}
+  .enter-btn{padding:10px 28px;font-size:14px;}
+}
+</style>
+</head>
+<body>
+<div id="particles-js"></div>
+<div class="bg-shape shape1"></div>
+<div class="bg-shape shape2"></div>
+<div class="bg-shape shape3"></div>
+
+<div class="content">
+  <div class="logo"><img src="Logo.png" alt="Book Logo"></div>
+  <div class="edu-edge">
+    <span class="edu">Edu</span><span class="edge">Edge</span>
+  </div>
+  <div class="tagline">Your Competitive Learning Advantage</div>
+  <div class="welcome">✨ Welcome to EduEdge ✨</div>
+  <a href="front.html" class="enter-btn">GET STARTED</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script>
+particlesJS("particles-js", {
+  "particles": {
+    "number":{"value":100},
+    "color":{"value":"#ffffff"},
+    "shape":{"type":"circle"},
+    "opacity":{"value":0.5},
+    "size":{"value":3},
+    "line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},
+    "move":{"enable":true,"speed":3}
+  }
+});
+</script>
+</body>
+</html>
