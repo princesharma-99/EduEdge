@@ -8,21 +8,21 @@ const notesData = {
     "Engineering Mathematics-I": {
       title: "Engineering Mathematics-I",
       units: {
-        "Unit 1 (Differential Calculus – I)": "../B Tech (1st Year)/Maths I/Differential%20Calculus%20–%20I.pdf",
-        "Unit 2 (Differential Calculus – II)": "../B Tech (1st Year)/Maths I/Differential%20Calculus%20–%20II.pdf",
-        "Unit 3 (Differential Equation – I)": "../B Tech (1st Year)/Maths I/Differential%20Equation%20-%20I.pdf",
-        "Unit 4 (Differential Equation – II)": "../B Tech (1st Year)/Maths I/Differential%20Equation%20–%20II.pdf",
-        "Unit 5 (Partial Differential Equations)": "../B Tech (1st Year)/Maths I/Partial%20Differential%20Equations.pdf"
+        "Unit 1 (Differential Calculus – I)": "../Maths I/Differential%20Calculus%20–%20I.pdf",
+        "Unit 2 (Differential Calculus – II)": "../Maths I/Differential%20Calculus%20–%20II.pdf",
+        "Unit 3 (Differential Equation – I)": "../Maths I/Differential%20Equation%20-%20I.pdf",
+        "Unit 4 (Differential Equation – II)": "../Maths I/Differential%20Equation%20–%20II.pdf",
+        "Unit 5 (Partial Differential Equations)": "../Maths I/Partial%20Differential%20Equations.pdf"
       }
     },
     "Engineering Physics": {
       title: "Engineering Physics",
       units: {
-        "Unit 1 (Wave Optics)": "../B Tech (1st Year)/Physics/Wave%20Optics.pdf",
-        "Unit 2 (Laser & Optical Fibers)": "../B Tech (1st Year)/Physics/Laser%20&%20Optical%20Fibers.pdf",
-        "Unit 3 (Quantum Mechanics)": "../B Tech (1st Year)/Physics/Quantum%20Mechanics.pdf",
-        "Unit 4 (Physics Of Advanced Materials)": "../B Tech (1st Year)/Physics/Physics%20Of%20Advanced%20Materials.pdf",
-        "Unit 5 (Electromagnetism)": "../B Tech (1st Year)/Physics/Electromagnetism.pdf"
+        "Unit 1 (Wave Optics)": "../Physics/Wave%20Optics.pdf",
+        "Unit 2 (Laser & Optical Fibers)": "../Physics/Laser%20&%20Optical%20Fibers.pdf",
+        "Unit 3 (Quantum Mechanics)": "../Physics/Quantum%20Mechanics.pdf",
+        "Unit 4 (Physics Of Advanced Materials)": "../Physics/Physics%20Of%20Advanced%20Materials.pdf",
+        "Unit 5 (Electromagnetism)": "..//Physics/Electromagnetism.pdf"
       }
     },
     "Engineering Chemistry": {
@@ -38,64 +38,64 @@ const notesData = {
     "Communication Skills": {
       title: "Communication Skills",
       units: {
-        "Unit 1 (Communication Skills I - Speaking)": "../B Tech (1st Year)/CS/Communication%20Skills%20I%20(Speaking).pdf",
-        "Unit 2 (Communication Skills II - Listening and Reading)": "../B Tech (1st Year)/CS/Communication%20Skills%20II%20(Listening%20and%20Reading).pdf",
-        "Unit 3 (Communication Skills III - Writing Skills)": "../B Tech (1st Year)/CS/Communication%20Skills%20III%20(Writing%20Skills).pdf",
-        "Unit 4 (Essentials of Grammar)": "../B Tech (1st Year)/CS/Essentials%20of%20Grammar.pdf",
-        "Unit 5 (Communication Through Poems and Short Stories)": "../B Tech (1st Year)/CS/Communication%20Through%20Poems%20and%20Short%20Stories.pdf"
+        "Unit 1 (Communication Skills I - Speaking)": "../CS/Communication%20Skills%20I%20(Speaking).pdf",
+        "Unit 2 (Communication Skills II - Listening and Reading)": "../CS/Communication%20Skills%20II%20(Listening%20and%20Reading).pdf",
+        "Unit 3 (Communication Skills III - Writing Skills)": "../CS/Communication%20Skills%20III%20(Writing%20Skills).pdf",
+        "Unit 4 (Essentials of Grammar)": "../CS/Essentials%20of%20Grammar.pdf",
+        "Unit 5 (Communication Through Poems and Short Stories)": "../CS/Communication%20Through%20Poems%20and%20Short%20Stories.pdf"
       }
     },
     "Managerial Economics and Financial Accounting": {
       title: "Managerial Economics and Financial Accounting",
       units: {
-        "Unit 1 (Introduction to Managerial Economics)": "../B Tech (1st Year)/MEFA/Introduction%20to%20Managerial%20Economics.pdf",
-        "Unit 2 (Theory of Demand)": "../B Tech (1st Year)/MEFA/Theory%20of%20Demand.pdf",
-        "Unit 3 (Production & Cost Analyses)": "../B Tech (1st Year)/MEFA/Production%20&%20Cost%20Analyses.pdf",
-        "Unit 4 (Market Structure and Pricing Theory)": "../B Tech (1st Year)/MEFA/Market%20Structure%20and%20Pricing%20Theory.pdf",
-        "Unit 5 (Types of Business Organization & Business Cycles)": "../B Tech (1st Year)/MEFA/Types%20of%20Business%20Organization%20&%20Business%20Cycles.pdf",
-        "Unit 6 (Financial Accounting and Ratio Analysis)": "../B Tech (1st Year)/MEFA/Financial%20Accounting%20and%20Ratio%20Analysis.pdf"
+        "Unit 1 (Introduction to Managerial Economics)": "../MEFA/Introduction%20to%20Managerial%20Economics.pdf",
+        "Unit 2 (Theory of Demand)": "../MEFA/Theory%20of%20Demand.pdf",
+        "Unit 3 (Production & Cost Analyses)": "../MEFA/Production%20&%20Cost%20Analyses.pdf",
+        "Unit 4 (Market Structure and Pricing Theory)": "../MEFA/Market%20Structure%20and%20Pricing%20Theory.pdf",
+        "Unit 5 (Types of Business Organization & Business Cycles)": "../MEFA/Types%20of%20Business%20Organization%20&%20Business%20Cycles.pdf",
+        "Unit 6 (Financial Accounting and Ratio Analysis)": "../MEFA/Financial%20Accounting%20and%20Ratio%20Analysis.pdf"
       }
     },
     "Introduction to Built Environment": {
       title: "Introduction to Built Environment",
       units: {
-        "Unit 1 (Built Environment & Elements of Built Environment)": "../B Tech (1st Year)/IBE/Built%20Environment%20&%20Elements%20of%20Built%20Environment.pdf",
-        "Unit 2 (Modern World Approaches Towards Built Environment)": "../B Tech (1st Year)/IBE/Modern%20World%20Approaches%20Towards%20Built%20Environment.pdf",
-        "Unit 3 (Role of Civil Engineering in Built Environment)": "../B Tech (1st Year)/IBE/Role%20of%20Civil%20Engineering%20in%20Built%20Environment.pdf",
-        "Unit 4 (Historical Architecture and Modern Structural Design & Construction)": "../B Tech (1st Year)/IBE/Historical%20Architecture%20and%20Modern%20Structural%20Design%20&%20Construction.pdf",
-        "Unit 5 (Building Physics, Ergonomics, and Comfort)": "../B Tech (1st Year)/IBE/Building%20Physics,%20Ergonomics,%20and%20Comfort.pdf"
+        "Unit 1 (Built Environment & Elements of Built Environment)": "../IBE/Built%20Environment%20&%20Elements%20of%20Built%20Environment.pdf",
+        "Unit 2 (Modern World Approaches Towards Built Environment)": "../IBE/Modern%20World%20Approaches%20Towards%20Built%20Environment.pdf",
+        "Unit 3 (Role of Civil Engineering in Built Environment)": "../IBE/Role%20of%20Civil%20Engineering%20in%20Built%20Environment.pdf",
+        "Unit 4 (Historical Architecture and Modern Structural Design & Construction)": "../IBE/Historical%20Architecture%20and%20Modern%20Structural%20Design%20&%20Construction.pdf",
+        "Unit 5 (Building Physics, Ergonomics, and Comfort)": "../IBE/Building%20Physics,%20Ergonomics,%20and%20Comfort.pdf"
       }
     },
     "Basic Electrical Engineering": {
       title: "Basic Electrical Engineering",
       units: {
-         "Unit 1 (Introduction)": "../B Tech (1st Year)/BEE/Introduction.pdf",
-         "Unit 2 (DC Circuits)": "../B Tech (1st Year)/BEE/DC%20Circuits.pdf",
-         "Unit 3 (AC Circuits)": "../B Tech (1st Year)/BEE/AC%20Circuits.pdf",
-         "Unit 4 (Transformer and DC Machines)": "../B Tech (1st Year)/BEE/Transformer%20and%20DC%20Machines.pdf",
-         "Unit 5 (Basic Electronic Devices & Thyristors)": "../B Tech (1st Year)/BEE/Basic%20Electronic%20Devices%20%26%20Thyristors.pdf",
-         "Unit 6 (Communication System)": "../B Tech (1st Year)/BEE/Communication%20System.pdf"
+         "Unit 1 (Introduction)": "../BEE/Introduction.pdf",
+         "Unit 2 (DC Circuits)": "../BEE/DC%20Circuits.pdf",
+         "Unit 3 (AC Circuits)": "../BEE/AC%20Circuits.pdf",
+         "Unit 4 (Transformer and DC Machines)": "../BEE/Transformer%20and%20DC%20Machines.pdf",
+         "Unit 5 (Basic Electronic Devices & Thyristors)": "../BEE/Basic%20Electronic%20Devices%20%26%20Thyristors.pdf",
+         "Unit 6 (Communication System)": "../BEE/Communication%20System.pdf"
       }
     },
     "Computer Fundamentals & Programming": {
       title: "Computer Fundamentals & Programming",
       units: {
-        "Unit 1 (Fundamentals Of Computer & Number Systems)": "../B Tech (1st Year)/CFP/Fundamentals%20Of%20Computer%20&%20Number%20Systems.pdf",
-        "Unit 2 (C Language)": "../B Tech (1st Year)/CFP/C%20Language.pdf",
-        "Unit 3 (Control Statements and Loop In C)": "../B Tech (1st Year)/CFP/Control%20Statements%20and%20Loop%20In%20C.pdf",
-        "Unit 5 (Functions In C)": "../B Tech (1st Year)/CFP/Functions%20In%20C.pdf",
-        "Unit 4 (Arrays, Pointers & Structures in C)": "../B Tech (1st Year)/CFP/Arrays%2C%20Pointers%20&%20Structures%20in%20C.pdf",
-        "Unit 6 (Strings & Input or Output In C)": "../B Tech (1st Year)/CFP/Strings%20&%20Input%20or%20Output%20In%20C.pdf"
+        "Unit 1 (Fundamentals Of Computer & Number Systems)": "../CFP/Fundamentals%20Of%20Computer%20&%20Number%20Systems.pdf",
+        "Unit 2 (C Language)": "../CFP/C%20Language.pdf",
+        "Unit 3 (Control Statements and Loop In C)": "../CFP/Control%20Statements%20and%20Loop%20In%20C.pdf",
+        "Unit 5 (Functions In C)": "../CFP/Functions%20In%20C.pdf",
+        "Unit 4 (Arrays, Pointers & Structures in C)": "../CFP/Arrays%2C%20Pointers%20&%20Structures%20in%20C.pdf",
+        "Unit 6 (Strings & Input or Output In C)": "../CFP/Strings%20&%20Input%20or%20Output%20In%20C.pdf"
       }
     },
     "Elements of Mechanical Engineering": {
       title: "Elements of Mechanical Engineering",
       units: {
-        "Unit 1 (Thermodynamics & Second Law of Thermodynamics)": "../B Tech (1st Year)/EME/Thermodynamics%20&%20Second%20Law%20of%20Thermodynamics.pdf",
-        "Unit 2 (Vapour Power Cycles & Refrigeration and Air Conditioning)": "../B Tech (1st Year)/EME/Vapour%20Power%20Cycles%20&%20Refrigeration%20and%20Air%20Conditioning.pdf",
-        "Unit 3 (Gas Power Cycles & Internal Combustion Engines)": "../B Tech (1st Year)/EME/Gas%20Power%20Cycles%20&%20Internal%20Combustion%20Engines.pdf",
-        "Unit 4 (Materials and Manufacturing Processes)": "../B Tech (1st Year)/EME/Materials%20And%20Manufacturing%20Processes.pdf",
-        "Unit 5 (Power Transmission)": "../B Tech (1st Year)/EME/Power%20Transmission.pdf"
+        "Unit 1 (Thermodynamics & Second Law of Thermodynamics)": "../EME/Thermodynamics%20&%20Second%20Law%20of%20Thermodynamics.pdf",
+        "Unit 2 (Vapour Power Cycles & Refrigeration and Air Conditioning)": "../EME/Vapour%20Power%20Cycles%20&%20Refrigeration%20and%20Air%20Conditioning.pdf",
+        "Unit 3 (Gas Power Cycles & Internal Combustion Engines)": "../EME/Gas%20Power%20Cycles%20&%20Internal%20Combustion%20Engines.pdf",
+        "Unit 4 (Materials and Manufacturing Processes)": "../EME/Materials%20And%20Manufacturing%20Processes.pdf",
+        "Unit 5 (Power Transmission)": "../EME/Power%20Transmission.pdf"
       }
     }
   },
@@ -103,21 +103,21 @@ const notesData = {
     "Engineering Mathematics-II": {
       title: "Engineering Mathematics-II - 2023",
       units: {
-        "Unit 1 (Integral Calculus)": "../B Tech (1st Year)/Maths II/Integral%20Calculus.pdf",
-        "Unit 2 (Vector Calculus)": "../B Tech (1st Year)/Maths II/Vector%20Calculus.pdf",
-        "Unit 3 (Application of Vector Calculus)": "../B Tech (1st Year)/Maths II/Application%20of%20Vector%20Calculus.pdf",
-        "Unit 4 (Coordinate Geometry of Three Dimensions)": "../B Tech (1st Year)/Maths II/Coordinate%20Geometry%20of%20Three%20Dimensions.pdf",
-        "Unit 5 (Matrices)": "../B Tech (1st Year)/Maths II/Matrices.pdf"
+        "Unit 1 (Integral Calculus)": "../Maths II/Integral%20Calculus.pdf",
+        "Unit 2 (Vector Calculus)": "../Maths II/Vector%20Calculus.pdf",
+        "Unit 3 (Application of Vector Calculus)": "../Maths II/Application%20of%20Vector%20Calculus.pdf",
+        "Unit 4 (Coordinate Geometry of Three Dimensions)": "../Maths II/Coordinate%20Geometry%20of%20Three%20Dimensions.pdf",
+        "Unit 5 (Matrices)": "../Maths II/Matrices.pdf"
       }
     },
     "Engineering Physics": {
       title: "Engineering Physics",
       units: {
-        "Unit 1 (Wave Optics)": "../B Tech (1st Year)/Physics/Wave%20Optics.pdf",
-        "Unit 2 (Laser & Optical Fibers)": "../B Tech (1st Year)/Physics/Laser%20&%20Optical%20Fibers.pdf",
-        "Unit 3 (Quantum Mechanics)": "../B Tech (1st Year)/Physics/Quantum%20Mechanics.pdf",
-        "Unit 4 (Physics Of Advanced Materials)": "../B Tech (1st Year)/Physics/Physics%20Of%20Advanced%20Materials.pdf",
-        "Unit 5 (Electromagnetism)": "../B Tech (1st Year)/Physics/Electromagnetism.pdf"
+        "Unit 1 (Wave Optics)": "../Physics/Wave%20Optics.pdf",
+        "Unit 2 (Laser & Optical Fibers)": "../Physics/Laser%20&%20Optical%20Fibers.pdf",
+        "Unit 3 (Quantum Mechanics)": "../Physics/Quantum%20Mechanics.pdf",
+        "Unit 4 (Physics Of Advanced Materials)": "../Physics/Physics%20Of%20Advanced%20Materials.pdf",
+        "Unit 5 (Electromagnetism)": "..//Physics/Electromagnetism.pdf"
       }
     },
     "Engineering Chemistry": {
@@ -133,64 +133,64 @@ const notesData = {
     "Communication Skills": {
       title: "Communication Skills",
       units: {
-        "Unit 1 (Communication Skills I - Speaking)": "../B Tech (1st Year)/CS/Communication%20Skills%20I%20(Speaking).pdf",
-        "Unit 2 (Communication Skills II - Listening and Reading)": "../B Tech (1st Year)/CS/Communication%20Skills%20II%20(Listening%20and%20Reading).pdf",
-        "Unit 3 (Communication Skills III - Writing Skills)": "../B Tech (1st Year)/CS/Communication%20Skills%20III%20(Writing%20Skills).pdf",
-        "Unit 4 (Essentials of Grammar)": "../B Tech (1st Year)/CS/Essentials%20of%20Grammar.pdf",
-        "Unit 5 (Communication Through Poems and Short Stories)": "../B Tech (1st Year)/CS/Communication%20Through%20Poems%20and%20Short%20Stories.pdf"
+        "Unit 1 (Communication Skills I - Speaking)": "../CS/Communication%20Skills%20I%20(Speaking).pdf",
+        "Unit 2 (Communication Skills II - Listening and Reading)": "../CS/Communication%20Skills%20II%20(Listening%20and%20Reading).pdf",
+        "Unit 3 (Communication Skills III - Writing Skills)": "../CS/Communication%20Skills%20III%20(Writing%20Skills).pdf",
+        "Unit 4 (Essentials of Grammar)": "../CS/Essentials%20of%20Grammar.pdf",
+        "Unit 5 (Communication Through Poems and Short Stories)": "../CS/Communication%20Through%20Poems%20and%20Short%20Stories.pdf"
       }
     },
     "Managerial Economics and Financial Accounting": {
       title: "Managerial Economics and Financial Accounting",
       units: {
-        "Unit 1 (Introduction to Managerial Economics)": "../B Tech (1st Year)/MEFA/Introduction%20to%20Managerial%20Economics.pdf",
-        "Unit 2 (Theory of Demand)": "../B Tech (1st Year)/MEFA/Theory%20of%20Demand.pdf",
-        "Unit 3 (Production & Cost Analyses)": "../B Tech (1st Year)/MEFA/Production%20&%20Cost%20Analyses.pdf",
-        "Unit 4 (Market Structure and Pricing Theory)": "../B Tech (1st Year)/MEFA/Market%20Structure%20and%20Pricing%20Theory.pdf",
-        "Unit 5 (Types of Business Organization & Business Cycles)": "../B Tech (1st Year)/MEFA/Types%20of%20Business%20Organization%20&%20Business%20Cycles.pdf",
-        "Unit 6 (Financial Accounting and Ratio Analysis)": "../B Tech (1st Year)/MEFA/Financial%20Accounting%20and%20Ratio%20Analysis.pdf"
+        "Unit 1 (Introduction to Managerial Economics)": "../MEFA/Introduction%20to%20Managerial%20Economics.pdf",
+        "Unit 2 (Theory of Demand)": "../MEFA/Theory%20of%20Demand.pdf",
+        "Unit 3 (Production & Cost Analyses)": "../MEFA/Production%20&%20Cost%20Analyses.pdf",
+        "Unit 4 (Market Structure and Pricing Theory)": "../MEFA/Market%20Structure%20and%20Pricing%20Theory.pdf",
+        "Unit 5 (Types of Business Organization & Business Cycles)": "../MEFA/Types%20of%20Business%20Organization%20&%20Business%20Cycles.pdf",
+        "Unit 6 (Financial Accounting and Ratio Analysis)": "../MEFA/Financial%20Accounting%20and%20Ratio%20Analysis.pdf"
       }
     },
     "Introduction to Built Environment": {
       title: "Introduction to Built Environment",
       units: {
-        "Unit 1 (Built Environment & Elements of Built Environment)": "../B Tech (1st Year)/IBE/Built%20Environment%20&%20Elements%20of%20Built%20Environment.pdf",
-        "Unit 2 (Modern World Approaches Towards Built Environment)": "../B Tech (1st Year)/IBE/Modern%20World%20Approaches%20Towards%20Built%20Environment.pdf",
-        "Unit 3 (Role of Civil Engineering in Built Environment)": "../B Tech (1st Year)/IBE/Role%20of%20Civil%20Engineering%20in%20Built%20Environment.pdf",
-        "Unit 4 (Historical Architecture and Modern Structural Design & Construction)": "../B Tech (1st Year)/IBE/Historical%20Architecture%20and%20Modern%20Structural%20Design%20&%20Construction.pdf",
-        "Unit 5 (Building Physics, Ergonomics, and Comfort)": "../B Tech (1st Year)/IBE/Building%20Physics,%20Ergonomics,%20and%20Comfort.pdf"
+        "Unit 1 (Built Environment & Elements of Built Environment)": "../IBE/Built%20Environment%20&%20Elements%20of%20Built%20Environment.pdf",
+        "Unit 2 (Modern World Approaches Towards Built Environment)": "../IBE/Modern%20World%20Approaches%20Towards%20Built%20Environment.pdf",
+        "Unit 3 (Role of Civil Engineering in Built Environment)": "../IBE/Role%20of%20Civil%20Engineering%20in%20Built%20Environment.pdf",
+        "Unit 4 (Historical Architecture and Modern Structural Design & Construction)": "../IBE/Historical%20Architecture%20and%20Modern%20Structural%20Design%20&%20Construction.pdf",
+        "Unit 5 (Building Physics, Ergonomics, and Comfort)": "../IBE/Building%20Physics,%20Ergonomics,%20and%20Comfort.pdf"
       }
     },
     "Basic Electrical Engineering": {
       title: "Basic Electrical Engineering",
       units: {
-         "Unit 1 (Introduction)": "../B Tech (1st Year)/BEE/Introduction.pdf",
-         "Unit 2 (DC Circuits)": "../B Tech (1st Year)/BEE/DC%20Circuits.pdf",
-         "Unit 3 (AC Circuits)": "../B Tech (1st Year)/BEE/AC%20Circuits.pdf",
-         "Unit 4 (Transformer and DC Machines)": "../B Tech (1st Year)/BEE/Transformer%20and%20DC%20Machines.pdf",
-         "Unit 5 (Basic Electronic Devices & Thyristors)": "../B Tech (1st Year)/BEE/Basic%20Electronic%20Devices%20%26%20Thyristors.pdf",
-         "Unit 6 (Communication System)": "../B Tech (1st Year)/BEE/Communication%20System.pdf"
+         "Unit 1 (Introduction)": "../BEE/Introduction.pdf",
+         "Unit 2 (DC Circuits)": "../BEE/DC%20Circuits.pdf",
+         "Unit 3 (AC Circuits)": "../BEE/AC%20Circuits.pdf",
+         "Unit 4 (Transformer and DC Machines)": "../BEE/Transformer%20and%20DC%20Machines.pdf",
+         "Unit 5 (Basic Electronic Devices & Thyristors)": "../BEE/Basic%20Electronic%20Devices%20%26%20Thyristors.pdf",
+         "Unit 6 (Communication System)": "../BEE/Communication%20System.pdf"
       }
     },
     "Computer Fundamentals & Programming": {
       title: "Computer Fundamentals & Programming",
       units: {
-        "Unit 1 (Fundamentals Of Computer & Number Systems)": "../B Tech (1st Year)/CFP/Fundamentals%20Of%20Computer%20&%20Number%20Systems.pdf",
-        "Unit 2 (C Language)": "../B Tech (1st Year)/CFP/C%20Language.pdf",
-        "Unit 3 (Control Statements and Loop In C)": "../B Tech (1st Year)/CFP/Control%20Statements%20and%20Loop%20In%20C.pdf",
-        "Unit 5 (Functions In C)": "../B Tech (1st Year)/CFP/Functions%20In%20C.pdf",
-        "Unit 4 (Arrays, Pointers & Structures in C)": "../B Tech (1st Year)/CFP/Arrays%2C%20Pointers%20&%20Structures%20in%20C.pdf",
-        "Unit 6 (Strings & Input or Output In C)": "../B Tech (1st Year)/CFP/Strings%20&%20Input%20or%20Output%20In%20C.pdf"
+        "Unit 1 (Fundamentals Of Computer & Number Systems)": "../CFP/Fundamentals%20Of%20Computer%20&%20Number%20Systems.pdf",
+        "Unit 2 (C Language)": "../CFP/C%20Language.pdf",
+        "Unit 3 (Control Statements and Loop In C)": "../CFP/Control%20Statements%20and%20Loop%20In%20C.pdf",
+        "Unit 5 (Functions In C)": "../CFP/Functions%20In%20C.pdf",
+        "Unit 4 (Arrays, Pointers & Structures in C)": "../CFP/Arrays%2C%20Pointers%20&%20Structures%20in%20C.pdf",
+        "Unit 6 (Strings & Input or Output In C)": "../CFP/Strings%20&%20Input%20or%20Output%20In%20C.pdf"
       }
     },
     "Elements of Mechanical Engineering": {
       title: "Elements of Mechanical Engineering",
       units: {
-        "Unit 1 (Thermodynamics & Second Law of Thermodynamics)": "../B Tech (1st Year)/EME/Thermodynamics%20&%20Second%20Law%20of%20Thermodynamics.pdf",
-        "Unit 2 (Vapour Power Cycles & Refrigeration and Air Conditioning)": "../B Tech (1st Year)/EME/Vapour%20Power%20Cycles%20&%20Refrigeration%20and%20Air%20Conditioning.pdf",
-        "Unit 3 (Gas Power Cycles & Internal Combustion Engines)": "../B Tech (1st Year)/EME/Gas%20Power%20Cycles%20&%20Internal%20Combustion%20Engines.pdf",
-        "Unit 4 (Materials and Manufacturing Processes)": "../B Tech (1st Year)/EME/Materials%20And%20Manufacturing%20Processes.pdf",
-        "Unit 5 (Power Transmission)": "../B Tech (1st Year)/EME/Power%20Transmission.pdf"
+        "Unit 1 (Thermodynamics & Second Law of Thermodynamics)": "../EME/Thermodynamics%20&%20Second%20Law%20of%20Thermodynamics.pdf",
+        "Unit 2 (Vapour Power Cycles & Refrigeration and Air Conditioning)": "../EME/Vapour%20Power%20Cycles%20&%20Refrigeration%20and%20Air%20Conditioning.pdf",
+        "Unit 3 (Gas Power Cycles & Internal Combustion Engines)": "../EME/Gas%20Power%20Cycles%20&%20Internal%20Combustion%20Engines.pdf",
+        "Unit 4 (Materials and Manufacturing Processes)": "../EME/Materials%20And%20Manufacturing%20Processes.pdf",
+        "Unit 5 (Power Transmission)": "../EME/Power%20Transmission.pdf"
       }
     }
   }
@@ -297,3 +297,4 @@ const observer = new IntersectionObserver(entries => {
 function observeCards() {
   document.querySelectorAll(".card").forEach(card => observer.observe(card));
 }
+
