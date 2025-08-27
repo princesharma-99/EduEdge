@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EduEdge | Coming Soon</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(-45deg,#00c6ff,#4b00e0,#ff4d6d,#ffe156);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color:#fff;
+      position: relative;
+      overflow: hidden;
+      padding:20px;
+    }
+    @keyframes gradientBG {
+      0%{background-position:0% 50%;}
+      50%{background-position:100% 50%;}
+      100%{background-position:0% 50%;}
+    }
+
+    /* Particles.js */
+    #particles-js {
+      position:absolute;
+      top:0;left:0;
+      width:100%;height:100%;
+      z-index:0;
+    }
+
+    /* Floating shapes */
+    .bg-shape {position:absolute;border-radius:50%;opacity:0.25;filter:blur(40px);animation: float 8s infinite ease-in-out alternate;z-index:1;}
+    .shape1 {width:300px;height:300px;top:-100px;left:-80px;background:#00c6ff;}
+    .shape2 {width:220px;height:220px;bottom:-60px;right:-50px;background:#ffe156;}
+    .shape3 {width:180px;height:180px;top:20%;right:12%;background:#ff4d6d;}
+    @keyframes float {0%{transform:translateY(0) translateX(0);}100%{transform:translateY(-50px) translateX(40px);}}
+
+    /* Main Content */
+    .content {
+      z-index:3;
+      max-width:700px;
+      width:90%;
+      animation:fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {from{opacity:0;transform:translateY(50px);}to{opacity:1;transform:translateY(0);}}
+
+    /* Logo */
+    .logo {margin-bottom:15px;animation:floatLogo 4s ease-in-out infinite;}
+    .logo img {width:150px;max-width:35vw;height:auto;filter:drop-shadow(0 0 20px rgba(255,255,255,0.7));}
+    @keyframes floatLogo {0%,100%{transform:translateY(0);}50%{transform:translateY(-15px);}}
+
+    /* Brand */
+    .brand{display:flex;justify-content:center;gap:6px;flex-wrap:wrap;}
+    .edu{font-size:clamp(28px,6vw,50px);font-weight:700;color:#fff;}
+    .edge{font-size:clamp(28px,6vw,50px);font-weight:700;color:#00e0ff;}
+
+    .tagline {
+      font-size:clamp(14px,2.5vw,20px);
+      font-weight:500;
+      margin-top:10px;
+      color:#ffe156;
+      animation:fadeUp 2s ease forwards;
+      animation-delay:1s;
+      opacity:0;
+    }
+    @keyframes fadeUp {from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+
+    /* Typewriter */
+    .typewriter {
+      font-size:clamp(18px,3vw,28px);
+      font-weight:600;
+      border-right:3px solid #fff;
+      white-space:nowrap;
+      overflow:hidden;
+      width:0;
+      animation:typing 5s steps(40,end) forwards, blink 0.8s infinite;
+      margin:20px auto;
+    }
+    @keyframes typing {from{width:0;}to{width:100%;}}
+    @keyframes blink {50%{border-color:transparent;}}
+
+    /* Countdown */
+    .countdown {display:flex;justify-content:center;gap:15px;margin-top:30px;flex-wrap:wrap;animation:fadeUp 2s ease forwards;animation-delay:2.5s;opacity:0;}
+    .time-box {
+      background:rgba(255,255,255,0.15);
+      padding:15px;
+      border-radius:16px;
+      backdrop-filter:blur(10px);
+      box-shadow:0 4px 15px rgba(0,0,0,0.4), inset 0 0 10px rgba(255,255,255,0.2);
+      min-width:70px;
+      transition:transform 0.4s, box-shadow 0.4s;
+    }
+    .time-box:hover{transform:translateY(-6px) scale(1.05);box-shadow:0 8px 25px rgba(255,255,255,0.6);}
+    .time-box h2{font-size:clamp(20px,5vw,32px);}
+    .time-box p{font-size:clamp(10px,3vw,14px);color:#ffe156;}
+
+    /* Responsive shape sizes */
+    @media(max-width:1024px){
+      .shape1{width:220px;height:220px;top:-80px;left:-50px;}
+      .shape2{width:160px;height:160px;bottom:-40px;right:-30px;}
+      .shape3{width:130px;height:130px;top:18%;right:8%;}
+    }
+    @media(max-width:768px){
+      .shape1{width:180px;height:180px;}
+      .shape2{width:120px;height:120px;}
+      .shape3{width:100px;height:100px;}
+    }
+    @media(max-width:480px){
+      .shape1{width:120px;height:120px;}
+      .shape2{width:90px;height:90px;}
+      .shape3{width:80px;height:80px;}
+      .logo img{width:100px;}
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+  <div class="bg-shape shape1"></div>
+  <div class="bg-shape shape2"></div>
+  <div class="bg-shape shape3"></div>
+
+  <div class="content">
+    <div class="logo"><img src="Logo.png" alt="EduEdge Logo"></div>
+    <div class="brand"><span class="edu">Edu</span><span class="edge">Edge</span></div>
+    <div class="tagline">Your Competitive Learning Advantage</div>
+    <div class="typewriter">Coming Soon!</div>
+
+    <div class="countdown" id="countdown">
+      <div class="time-box"><h2 id="days">00</h2><p>Days</p></div>
+      <div class="time-box"><h2 id="hours">00</h2><p>Hours</p></div>
+      <div class="time-box"><h2 id="minutes">00</h2><p>Minutes</p></div>
+      <div class="time-box"><h2 id="seconds">00</h2><p>Seconds</p></div>
+    </div>
+  </div>
+
+  <script>
+    const launchDate = new Date("Sep 24, 2025 23:59:59").getTime();
+    const timer = setInterval(function(){
+      const now = new Date().getTime();
+      const distance = launchDate - now;
+      const days = Math.floor(distance / (1000*60*60*24));
+      const hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+      const minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+      const seconds = Math.floor((distance % (1000*60))/1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if(distance < 0){
+        clearInterval(timer);
+        document.getElementById("countdown").innerHTML = "<h2>We are live now!</h2>";
+      }
+    },1000);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number":{"value":100},
+        "color":{"value":"#ffffff"},
+        "shape":{"type":"circle"},
+        "opacity":{"value":0.5},
+        "size":{"value":3},
+        "line_linked":{"enable":true,"distance":150,"color":"#ffffff","opacity":0.4,"width":1},
+        "move":{"enable":true,"speed":3}
+      }
+    });
+  </script>
+</body>
+</html>

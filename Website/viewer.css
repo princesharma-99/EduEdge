@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background: #f3f3f3;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+}
+
+.pdf-header {
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 8px 10px;
+  z-index: 1000;
+  transition: top 0.3s ease;
+  min-height: 40px;       /* minimum height */
+  height: auto;           /* allow expand */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;        /* allow multiple lines */
+  line-height: 1.4;       /* spacing between lines */
+}
+
+.pdf-header h1 {
+  margin: 0;
+  padding: 0 8px;
+  font-size: 1.2rem;
+  text-align: center;
+  word-wrap: break-word;   /* wrap long words */
+}
+
+.pdf-header.hidden {
+  top: -50px;
+}
+
+.pdf-container {
+  padding: 10px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  touch-action: none; /* For better zoom gesture support */
+}
+
+canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}

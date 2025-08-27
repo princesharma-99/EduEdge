@@ -1,0 +1,291 @@
+/* =============================
+   🌐 BASE STYLES
+============================= */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f9fc;
+  color: #212529;
+  scroll-behavior: smooth;
+}
+
+/* Navbar background & branding */
+.navbar {
+  background: #003973;
+}
+.navbar-brand span {
+  color: #ffffff;
+}
+
+/* =============================
+   🎯 HERO SECTION
+============================= */
+.hero {
+  background: linear-gradient(135deg, #0dcaf0, #6610f2);
+  min-height: 45vh;
+  padding-top: 80px;
+  background-size: 300% 300%;
+  animation: gradientBG 15s ease infinite;
+}
+.hero h1,
+.hero p {
+  color: #fff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+/* Smooth animated background */
+@keyframes gradientBG {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* =============================
+   🧩 SECTION CARDS
+============================= */
+.card {
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔴 NOTES: Red Theme */
+.card:has(.btn-outline-primary) {
+  border-left: 5px solid #dc3545;
+  background-color: #fff1f2;
+}
+.card:has(.btn-outline-primary) i {
+  color: #dc3545 !important;
+}
+.card:has(.btn-outline-primary) .btn-outline-primary {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+.card:has(.btn-outline-primary) .btn-outline-primary:hover {
+  background-color: #b02a37;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+}
+
+/* 🟢 PYQs: Green Theme */
+.card:has(.btn-outline-success) {
+  border-left: 5px solid #198754;
+  background-color: #e9f7ee;
+}
+.card:has(.btn-outline-success) i {
+  color: #198754 !important;
+}
+.card:has(.btn-outline-success) .btn-outline-success {
+  background-color: #198754;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+.card:has(.btn-outline-success) .btn-outline-success:hover {
+  background-color: #146c43;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.4);
+}
+
+/* 🔵 SOLUTIONS: Sky Blue Theme */
+.card:has(.btn-outline-info) {
+  border-left: 5px solid #0dcaf0;
+  background-color: #e8fafd;
+}
+.card:has(.btn-outline-info) i {
+  color: #0dcaf0 !important;
+}
+.card:has(.btn-outline-info) .btn-outline-info {
+  background-color: #0dcaf0;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+.card:has(.btn-outline-info) .btn-outline-info:hover {
+  background-color: #0aa2c0;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(13, 202, 240, 0.4);
+}
+
+/* 🟡 LAB MANUALS: Amber Theme */
+.card:has(.btn-outline-warning) {
+  border-left: 5px solid #ffc107;
+  background-color: #fff9e6;
+}
+.card:has(.btn-outline-warning) i {
+  color: #ffc107 !important;
+}
+.card:has(.btn-outline-warning) .btn-outline-warning {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+.card:has(.btn-outline-warning) .btn-outline-warning:hover {
+  background-color: #d39e00;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.4);
+}
+
+/* =============================
+   📢 FOOTER STYLING
+============================= */
+.footer {
+  background: #003973;
+  color: #ffffff;
+}
+.footer .social-icons a {
+  color: #ffffff;
+  font-size: 1.3rem;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+.footer .social-icons a:hover {
+  color: #ffd700;
+}
+
+/* =============================
+   📬 CONTACT MODAL
+============================= */
+
+/* Fullscreen overlay with blur */
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal content box */
+.modal-dialogue {
+  width: 90%;
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.96);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  transform: scale(0.8);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+/* Show modal animation */
+.modal-overlay.show .modal-dialogue {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Left panel with branding */
+.left-pane {
+  background: linear-gradient(135deg, #dc3545, #b02a37);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Social icons inside modal */
+.icon i {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.icon:hover i {
+  transform: scale(1.2);
+  filter: brightness(1.2);
+}
+
+/* Specific platform colors */
+.telegram  { color: #0088cc; }   /* Telegram Blue */
+.instagram { color: #e1306c; }   /* Instagram Pink */
+.whatsapp  { color: #25D366; }   /* WhatsApp Green */
+.linkedin  { color: #0077b5; }   /* LinkedIn Blue */
+
+/* Responsive modal adjustments */
+@media (max-width: 768px) {
+  .modal-dialogue {
+    flex-direction: column;
+    width: 95%;
+    border-radius: 16px;
+  }
+  .left-pane {
+    border-radius: 16px 16px 0 0 !important;
+    padding: 2rem 1rem;
+  }
+  .right-pane {
+    border-radius: 0 0 16px 16px !important;
+  }
+}
+
+/* =============================
+   📖 ABOUT MODAL
+============================= */
+#aboutModal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+  transition: opacity 0.3s ease;
+}
+
+#aboutModal .modal-dialogue {
+  width: 90%;
+  max-width: 850px;
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  transform: scale(0.85);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+#aboutModal.show .modal-dialogue {
+  transform: scale(1);
+  opacity: 1;
+}
+
+#aboutModal .left-pane {
+  background: linear-gradient(135deg, #0dcaf0, #6610f2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 2rem;
+}
+#aboutModal .left-pane img {
+  max-height: 180px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+#aboutModal .modal-dialogue ul {
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive About Modal */
+@media (max-width: 768px) {
+  #aboutModal .modal-dialogue {
+    flex-direction: column;
+    width: 95%;
+  }
+  #aboutModal .left-pane {
+    border-radius: 16px 16px 0 0 !important;
+    padding: 2rem 1rem;
+  }
+  #aboutModal .right-pane {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 1rem;
+  }
+}

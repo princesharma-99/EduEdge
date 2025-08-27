@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDF Viewer</title>
+  <link rel="stylesheet" href="viewer.css" />
+</head>
+<body>
+
+  <!-- Header Title -->
+  <div id="pdf-header" class="pdf-header">
+    <h1>Loading...</h1>
+  </div>
+
+  <!-- PDF Container -->
+  <div id="pdf-container" class="pdf-container">
+    <!-- Pages will render here -->
+  </div>
+
+  <!-- Load your local PDF.js libraries -->
+  <script src="pdf.js"></script>
+  <script src="pdf.worker.js"></script>
+
+  <!-- Load your custom viewer logic -->
+  <script src="viewer.js"></script>
+</body>
+</html>
